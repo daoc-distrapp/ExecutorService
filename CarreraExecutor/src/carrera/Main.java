@@ -17,7 +17,7 @@ public class Main {
         // TODO code application logic here
         
         ExecutorService pool = Executors.newFixedThreadPool(10);
-        for(int i = 0; i < 1000; i++)
+        for(int i = 0; i < 100; i++)
             pool.execute(new Corredor(50));
         
         pool.shutdown();
